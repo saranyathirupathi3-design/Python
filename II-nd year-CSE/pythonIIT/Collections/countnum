@@ -1,0 +1,15 @@
+from collections import Counter
+
+nums = [5,3,5,2,3,1,4,1,2]
+c = Counter(nums)
+
+for i in c:
+    if c[i] == 1:
+        print(i, end=" ")
+[24bcs155@mepcolinux collectios]$cat q2.py
+from collections import Counter
+
+s = "aabbccddeeffgg"
+c = Counter(s)
+
+print(len(set(c.values())) == 1)
